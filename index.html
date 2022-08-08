@@ -4,63 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet">
+    <title>Bejelentkezés | FlyBird</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-    <title>FlyBird Comp.</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="top-navbar-container">
-        <div id="left-side-navbar" class="navbar">
-            <img src="./assets/logo.png" id="logo">
-        </div>
-        <div id="mid-navbar" class="navbar">
-            <div id="default-navbar">
-                <a>Kontrollerek</a>
-                <a>VR kiegészítők</a>
-                <a>Laptopok</a>
-                <a>Monitorok</a>
-                <a>Egyéb</a>
+    <div id="bg-container">
+        <div id="main">
+            <div id="form-container">
+                <div id="brand-container">
+                    <img id="logo" src="./assets/logo.png">
+                </div>
+                <form>
+                    <input type="text" id="email" name="email" placeholder="E-mail cím"><br>
+                    <input type="password" id="password" name="password" placeholder="Jelszó"><br>
+                    <input type="submit" id="login" name="login" value="Bejelentkezés"><br>
+                    <label class="fly">Fly</label><br>
+                    <label class="bird">Bird</label>
+                </form>
             </div>
         </div>
-        <div id="right-side-navbar" class="navbar">
-            <img src="./assets/menu.png" id="menu">
-        </div>
+        <video id="main-bg" poster="./assets/BGPoster.jpg" autoplay muted loop>
+            <source src="./assets/BG.mp4" type="video/mp4">
+        </video>
     </div>
-    <div id="line"></div>
-    <div id="dropdown-menu">
-        <ul>
-            <li><a class="link-dropdown">Kontrollerek</a></li>
-            <li><a class="link-dropdown">VR kiegészítők</a></li>
-            <li><a class="link-dropdown">Laptopok</a></li>
-            <li><a class="link-dropdown">Monitorok</a></li>
-            <li><a class="link-dropdown">Egyéb</a></li>
-        </ul>
-        
-    </div>
-    <div id="mid-panel">
-        <div id="mid-text-panel">
-            <div id="header-container">
-                <h1>
-                    Megérkezett az újgenerációs kontroller!
-                </h1>
-            </div>
-            <div id="paragraph-container">
-                <p>
-                    Könnyebb, stílusosabb, korlátok nélkül.<br>
-                    Vedd kezedbe az irányítást most!
-                </p>
-            </div>
-            <div id="buy-now-container">
-                <button id="btn-buy-now">Kosárba</button>
-            </div>
-        </div>
-        <div id="background-container">
-            <img src="./assets/controller.png" id="main-img">
-        </div>
-    </div>
-    <script src="./app.js"></script>
 </body>
 </html>
